@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senior Citizen Schemes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Senior Citizen Government Schemes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="youth.html">Youth Schemes</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Check Eligibility</h2>
+    <form onsubmit="checkEligibilitySenior(event)">
+      <label>Age: <input type="number" id="senior-age" required></label>
+      <button type="submit">Check</button>
+    </form>
+    <div id="senior-result"></div>
+
+<section class="schemes">
+  <h2>Available Schemes for Senior Citizens</h2>
+  <div class="ticker">
+    <div class="ticker-content">
+      Indira Gandhi National Old Age Pension Scheme (IGNOAPS) • Pradhan Mantri Vaya Vandana Yojana (PMVVY) • Senior Citizens Savings Scheme (SCSS)
+    </div>
+  </div>
+</section>
+
+
+    <section class="enroll">
+      <h2>Enroll in a Scheme</h2>
+      <form id="senior-form" onsubmit="enrollSenior(event)">
+        <label>Name: <input type="text" id="senior-name" required></label>
+        <label>Phone Number: <input type="tel" id="senior-number" required></label>
+        <label>Address: <input type="text" id="senior-address" required></label>
+        <label>Aadhar Number: <input type="text" id="senior-aadhar" required></label>
+        <label>Education Qualification: <input type="text" id="senior-education" required></label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Government Info Portal</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

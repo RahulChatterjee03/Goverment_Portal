@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Schemes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Youth Government Schemes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="seniors.html">Senior Citizen Schemes</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Check Eligibility</h2>
+    <form onsubmit="checkEligibilityYouth(event)">
+      <label>Age: <input type="number" id="youth-age" required></label>
+      <label>Are you a student? <input type="checkbox" id="student"></label>
+      <button type="submit">Check</button>
+    </form>
+    <div id="youth-result"></div>
+
+    <section class="schemes">
+      <h2>Available Schemes for Youth</h2>
+<section class="schemes">
+  <h2>Available Schemes for Youth</h2>
+  <div class="ticker">
+    <div class="ticker-content">
+      Pradhan Mantri Kaushal Vikas Yojana (PMKVY) • National Career Service (NCS) • Atmanirbhar Bharat Rojgar Yojana (ABRY) • MGNREGA
+    </div>
+  </div>
+</section>
+
+    </section>
+
+    <section class="enroll">
+      <h2>Enroll in a Scheme</h2>
+      <form id="youth-form" onsubmit="enrollYouth(event)">
+        <label>Name: <input type="text" id="enroll-name" required></label>
+        <label>Phone Number: <input type="tel" id="enroll-number" required></label>
+        <label>Address: <input type="text" id="enroll-address" required></label>
+        <label>Aadhar Number: <input type="text" id="enroll-aadhar" required></label>
+        <label>Education Qualification: <input type="text" id="enroll-education" required></label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Government Info Portal</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
